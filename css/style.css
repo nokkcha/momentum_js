@@ -14,8 +14,16 @@ input {
     text-align: center;
 }
 
+input::placeholder{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+
 input:focus{
     outline: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 h2 {
@@ -28,6 +36,9 @@ h5{
     color: white;
     font-size: 30px;
     margin: 0;
+    text-shadow: 1px 1px 30px #525252;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
 
 ul {
@@ -42,6 +53,7 @@ li button {
 
 li {
     list-style: none;
+    text-shadow: 1px 1px 90px gray;
 }
 
 #login-form button {
@@ -49,27 +61,49 @@ li {
 }
 
 #clock {
-    margin: 100px 0 0 0;
+    padding: 0;
+    margin: 100px 0 -30px 0;
+    text-shadow: 1px 1px 10000px #525252;
+    font-family: 'Poppins', sans-serif;
 }
 
 #quote {
-    font-size: 15px;
+    font-size: 20px;
     color: white;
     margin-bottom: 2px;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 #quote span:last-child{
-    font-size: 7px;
+    font-size: 14px;
 }
+
+#todo-list {
+    padding: 0;
+    font-size: 20px;
+}
+
+
 
 #weather {
     color: white;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-shadow: 1px 1px 30px #525252;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
 }
 
 #greeting {
     color: white;
     margin: 0;
+    text-shadow: 1px 1px 90px gray;
+    font-family: 'Poppins', sans-serif;
 }
+
 
 .hidden {
     display: none;
