@@ -2,6 +2,9 @@ const images = [
     "0.jpeg",
     "1.jpeg",
     "2.jpeg",
+    "3.jpeg",
+    "4.jpeg",
+    "5.jpeg",
 ];
 
 //배경화면으로 사용할 사진들 배열로 만듬

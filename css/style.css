@@ -1,6 +1,7 @@
 
 body {
     text-align: center;
+    padding: 1%;
 }
 
 
@@ -8,7 +9,7 @@ input {
     border: none;
     background: transparent;
     font-size: 40px;
-    border-bottom: 5px solid white;
+    border-bottom: 3px solid white;
     color: #ecf0f1;
     margin: 10px;
     text-align: center;
@@ -49,12 +50,14 @@ ul {
 li button {
     border: none;
     background: transparent;
+    color: white;
 }
 
 li {
     list-style: none;
     text-shadow: 1px 1px 90px gray;
 }
+
 
 #login-form button {
     display: none;
@@ -85,18 +88,6 @@ li {
 }
 
 
-
-#weather {
-    color: white;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    text-shadow: 1px 1px 30px #525252;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-
-}
-
 #greeting {
     color: white;
     margin: 0;
@@ -110,6 +101,30 @@ li {
 }
 
 
+
+.wea-wea {
+    color: white;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-shadow: 1px 1px 30px #525252;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+
+.wea-city {
+    color: white;
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    text-shadow: 1px 1px 30px #525252;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
+}
+
 img {
     position: absolute;
     top: 0;
@@ -117,5 +132,7 @@ img {
     width: 100%;
     height: 100%;
     z-index: -1;
+
 }
+
 

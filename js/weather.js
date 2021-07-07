@@ -1,5 +1,6 @@
-
+//날씨 API 호출
 const API_KEY = "9ae91c3660721e4fcc1eace36af61933";
+
 
 function onGeoOk(position){
     const lat = position.coords.latitude;
@@ -9,7 +10,7 @@ function onGeoOk(position){
     const weather = document.querySelector("#weather span:first-child");
     const city = document.querySelector("#weather span:last-child");
     
-    weather.innerText = `${data.weather[0].main} / ${data.main.temp}`
+    weather.innerText = `${data.weather[0].main} / ${data.main.temp}ºC`
     city.innerText = data.name;
     
     });

@@ -1,5 +1,6 @@
 const clock = document.querySelector("h2#clock");
 
+//시계 가져오기
 function getClock(){
     const date = new Date();
     const hours = String(date.getHours()).padStart(2,"0");
