@@ -11,6 +11,8 @@ function saveToDos(){
 function deleteToDo(event){
     const li = event.target.parentElement;
     li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    saveToDos();
 }
 
 function paintToDo(newTodo){
@@ -21,8 +23,9 @@ function paintToDo(newTodo){
     const button = document.createElement("button");
     button.innerText = "❌";
     button.addEventListener("click",deleteToDo);
-    li.appendChild(span); //자식을 가진다.
     li.appendChild(button);
+    li.appendChild(span); //자식을 가진다.
+    
     toDoList.appendChild(li);
 
 }
@@ -54,3 +57,9 @@ if(savedToDos != null){
     parsedToDos.forEach(paintToDo);
     //forEach는 각각의 item에 대해 sayHello를 실행시킴.
 }
+
+function sexyFilter(){
+
+}
+
+[1,2,3,4].filter(sexyFilter)
